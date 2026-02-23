@@ -1,12 +1,3 @@
-Fix formatting issue in the README for Linux release link.
-Message and description suggested by Copilot.
-Direct commit or PR
-Commit directly to the
-
-main
-
-branch
-Create a new branch for this commit and start a pull request Learn more about pull requests
 <!DOCTYPE html>
 <html lang="en">
 
@@ -467,7 +458,8 @@ Create a new branch for this commit and start a pull request Learn more about pu
 
     <aside>
         <div class="logo">
-            <span>⚡</span> 7945 Code
+            <img src="../assets/logo.png" alt="Backend-cli Logo" style="width: 40px; height: 40px; border-radius: 8px;">
+            <span>Backend-cli</span>
         </div>
         <nav>
             <h4>Foundation</h4>
@@ -486,6 +478,9 @@ Create a new branch for this commit and start a pull request Learn more about pu
             </ul>
             <h4>Advanced Mastery</h4>
             <ul>
+                <li><a href="#conditionals">Logic & Control</a></li>
+                <li><a href="#metadata">Data Discovery</a></li>
+                <li><a href="#modularity">Modularity</a></li>
                 <li><a href="#sec-encryption">Modern Encryption</a></li>
                 <li><a href="#tutorial-api">Crypto API Bridge</a></li>
                 <li><a href="#tutorial-website">Live UI Dashboard</a></li>
@@ -495,14 +490,19 @@ Create a new branch for this commit and start a pull request Learn more about pu
 
     <main>
         <header>
-            <div style="font-weight: 800; letter-spacing: -0.5px; opacity: 0.9;">BACKEND-CLI</div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <img src="../assets/logo.png" alt="Backend-cli Logo"
+                    style="width: 32px; height: 32px; border-radius: 6px;">
+                <div style="font-weight: 800; letter-spacing: -0.5px; opacity: 0.9;">BACKEND-CLI</div>
+            </div>
             <button class="theme-toggle" onclick="toggleTheme()">✨ Switch Visuals</button>
         </header>
 
         <section id="introduction" class="hero">
             <h1>Build Backend <br><span class="hero-accent">With Absolute Clarity.</span></h1>
             <p><strong>backend-cli</strong> is a high-performance declarative engine engineered by <strong>7945
-                    Code</strong>. It collapses the complexity of backend services into elegant, scalable XML structures</p>
+                    Code</strong>. It collapses the complexity of backend services into elegant, scalable XML structures
+            </p>
             <div style="display: flex; gap: 1.5rem;">
                 <a href="#getting-started"
                     style="background: var(--primary-gradient); color: white; padding: 1.2rem 2.8rem; border-radius: 22px; text-decoration: none; font-weight: 800; box-shadow: 0 15px 30px -10px rgba(99, 102, 241, 0.5);">Start
@@ -511,27 +511,31 @@ Create a new branch for this commit and start a pull request Learn more about pu
                     style="background: var(--secondary-bg); color: var(--text-color); padding: 1.2rem 2.8rem; border-radius: 22px; text-decoration: none; font-weight: 800; border: 1px solid var(--border-color); box-shadow: var(--shadow);">API
                     Reference</a>
                 <a href="https://github.com/sbusiedcake7945/backend-cli/"
-                    style="background: var(--secondary-bg); color: var(--text-color); padding: 1.2rem 2.8rem; border-radius: 22px; text-decoration: none; font-weight: 800; border: 1px solid var(--border-color); box-shadow: var(--shadow);">github repo</a>
+                    style="background: var(--secondary-bg); color: var(--text-color); padding: 1.2rem 2.8rem; border-radius: 22px; text-decoration: none; font-weight: 800; border: 1px solid var(--border-color); box-shadow: var(--shadow);">github
+                    repo</a>
                 <a href="https://github.com/sbusiedcake7945/backend-cli-releases/raw/refs/heads/main/backend-cli.exe"
-                    style="background: var(--secondary-bg); color: var(--text-color); padding: 1.2rem 2.8rem; border-radius: 22px; text-decoration: none; font-weight: 800; border: 1px solid var(--border-color); box-shadow: var(--shadow);">windows install</a>
+                    style="background: var(--secondary-bg); color: var(--text-color); padding: 1.2rem 2.8rem; border-radius: 22px; text-decoration: none; font-weight: 800; border: 1px solid var(--border-color); box-shadow: var(--shadow);">windows
+                    install</a>
                 <a href="https://github.com/sbusiedcake7945/backend-cli-releases/raw/refs/heads/main/backend-cli"
-                    style="background: var(--secondary-bg); color: var(--text-color); padding: 1.2rem 2.8rem; border-radius: 22px; text-decoration: none; font-weight: 800; border: 1px solid var(--border-color); box-shadow: var(--shadow);">linux/unix install</a>
+                    style="background: var(--secondary-bg); color: var(--text-color); padding: 1.2rem 2.8rem; border-radius: 22px; text-decoration: none; font-weight: 800; border: 1px solid var(--border-color); box-shadow: var(--shadow);">linux/unix
+                    install</a>
             </div>
             </div>
         </section>
-                <div class="step-box">
-                    <div class="step-number-bg">02</div>
-                    <h3 style="margin-top: 0;">Shell Integration</h3>
-                    <p>Expose the binary to your PATH. On Linux/Unix: <code>cp backend-cli /usr/bin/</code> for instant
-                        access.</p>
-                </div>
-                <div class="step-box">
-                    <div class="step-number-bg">03</div>
-                    <h3 style="margin-top: 0;">Live Launch</h3>
-                    <p>Start your first project: <code>backend-cli run project.backend</code>. The engine spawns a
-                        high-speed server instantly.</p>
-                </div>
-            </div>
+        <section id="getting-started">
+        <div class="step-box">
+            <div class="step-number-bg">02</div>
+            <h3 style="margin-top: 0;">Shell Integration</h3>
+            <p>Expose the binary to your PATH. On Linux/Unix: <code>cp backend-cli /usr/bin/</code> for instant
+                access.</p>
+        </div>
+        <div class="step-box">
+            <div class="step-number-bg">03</div>
+            <h3 style="margin-top: 0;">Live Launch</h3>
+            <p>Start your first project: <code>backend-cli run project.backend</code>. The engine spawns a
+                high-speed server instantly.</p>
+        </div>
+        </div>
         </section>
 
         <section id="execution-flow">
@@ -584,7 +588,8 @@ Create a new branch for this commit and start a pull request Learn more about pu
                         <td class="tag-ref">&lt;function&gt;</td>
                         <td>Handler</td>
                         <td>Native code gateways. Executes raw <strong>Go</strong>, <strong>JS</strong>, or
-                            <strong>HTML</strong>.</td>
+                            <strong>HTML</strong>.
+                        </td>
                     </tr>
                     <tr>
                         <td class="tag-ref">&lt;var&gt;</td>
@@ -597,14 +602,38 @@ Create a new branch for this commit and start a pull request Learn more about pu
                         <td>Static and Dynamic HTTP path routing. Thread-safe execution.</td>
                     </tr>
                     <tr>
-                        <td class="tag-ref">&lt;handler&gt;</td>
-                        <td>Route</td>
-                        <td>Sequential logic block. Processes inputs and generates outputs.</td>
+                        <td class="tag-ref">&lt;database&gt;</td>
+                        <td>Global</td>
+                        <td>Unified data gateway. Supports <strong>SQLite</strong> and <strong>JSON</strong> storage.
+                        </td>
                     </tr>
                     <tr>
-                        <td class="tag-ref">&lt;http&gt;</td>
+                        <td class="tag-ref">&lt;if&gt;</td>
                         <td>Handler</td>
-                        <td>Async HTTP client. Bridges your backend to external APIs.</td>
+                        <td>Conditional execution using JS-style expressions. Supports <code>&lt;elseif&gt;</code> and
+                            <code>&lt;else&gt;</code>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tag-ref">&lt;get&gt;</td>
+                        <td>Hybrid</td>
+                        <td>Injects request metadata (<code>ip</code>, <code>url</code>). Security-hardened against DB
+                            injection.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-ref">&lt;include&gt;</td>
+                        <td>Global</td>
+                        <td>C-style inline file inclusion with detailed <code>includeError</code> tracing.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-ref">&lt;open&gt;</td>
+                        <td>Global</td>
+                        <td>Asynchronous file execution in an isolated goroutine.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-ref">&lt;call&gt; / Custom</td>
+                        <td>Handler</td>
+                        <td>Executes named functions. Supports isolated parameter passing.</td>
                     </tr>
                 </tbody>
             </table>
@@ -623,10 +652,11 @@ Create a new branch for this commit and start a pull request Learn more about pu
 <span class="tag">&lt;/function&gt;</span></code></pre>
                     </div>
                     <div>
-                        <h4 style="color: #a855f7;">JS Logic Block</h4>
+                        <h4 style="color: #a855f7;">JS Logic Block (Otto)</h4>
                         <pre><code><span class="tag">&lt;function</span> <span class="attr">type=</span><span class="val">"js"</span><span class="tag">&gt;</span>
-  <span class="comment">// Node.js Ecosystem</span>
-  process.stdout.write("Done");
+  <span class="comment">// Native Go-JS Engine</span>
+  console.log("Otto Engine Active");
+  print("Hello from JS");
 <span class="tag">&lt;/function&gt;</span></code></pre>
                     </div>
                 </div>
@@ -652,9 +682,80 @@ Create a new branch for this commit and start a pull request Learn more about pu
         </section>
 
         <section id="database">
-            <h2>Database: Unified Connector (BETA)</h2>
-            <p>Connect to relational storage with advanced connection pooling.</p>
-            <pre><code><span class="tag">&lt;database</span> <span class="attr">connection=</span><span class="val">"sqlite:7945_data.db"</span> <span class="tag">/&gt;</span></code></pre>
+            <h2>Unified Data Layer</h2>
+            <p>One tag to rule them all. Switch between SQL and JSON with a single attribute.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div>
+                    <h4 style="color: #10b981;">SQLite (Default)</h4>
+                    <pre><code><span class="tag">&lt;database</span> <span class="attr">connection=</span><span class="val">"./data.db"</span> <span class="tag">/&gt;</span></code></pre>
+                </div>
+                <div>
+                    <h4 style="color: #3b82f6;">JSON Storage</h4>
+                    <pre><code><span class="tag">&lt;database</span> <span class="attr">type=</span><span class="val">"json"</span> <span class="attr">connection=</span><span class="val">"./data.json"</span> <span class="attr">var=</span><span class="val">"db"</span> <span class="tag">/&gt;</span></code></pre>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <strong>Pro Tip:</strong> All database paths support <code>./</code> relative syntax for maximum
+                portability.
+            </div>
+        </section>
+
+        <section id="conditionals">
+            <h2>Conditionals: Pure Intelligence</h2>
+            <p>Control the flow of your application with high-level logic blocks.</p>
+            <pre><code><span class="tag">&lt;if</span> <span class="attr">condition=</span><span class="val">"'{{user_id}}' == '7945'"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;print&gt;</span>Welcome, Developer!<span class="tag">&lt;/print&gt;</span>
+<span class="tag">&lt;elseif</span> <span class="attr">condition=</span><span class="val">"{{age}} >= 18"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;print&gt;</span>Access Granted.<span class="tag">&lt;/print&gt;</span>
+<span class="tag">&lt;else&gt;</span>
+  <span class="tag">&lt;print&gt;</span>Access Denied.<span class="tag">&lt;/print&gt;</span>
+<span class="tag">&lt;/if&gt;</span></code></pre>
+        </section>
+
+        <section id="metadata">
+            <h2>Metadata: Environmental Awareness</h2>
+            <p>Inject real-time request data directly into your views or logic.</p>
+            <div class="glass-card">
+                <p>Available data points:</p>
+                <ul>
+                    <li><code>&lt;get data="ip" /&gt;</code> - Resolves to the client's IP address.</li>
+                    <li><code>&lt;get data="url" /&gt;</code> - Resolves to the full requested path.</li>
+                </ul>
+                <div class="highlight-box" style="border-left-color: #f43f5e;">
+                    <strong>Security Alert:</strong> Metadata tags are automatically sanitized and blocked within
+                    <code>&lt;query&gt;</code> blocks to prevent data leaks.
+                </div>
+            </div>
+        </section>
+
+        <section id="modularity">
+            <h2>Modularity: Scale With Elegance</h2>
+            <p>Split your application into manageable components without losing performance.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div>
+                    <h4 style="color: #6366f1;">&lt;include file="..." /&gt;</h4>
+                    <p style="font-size: 1rem;">Seamlessly merges external logic into the current scope. If an error
+                        occurs, the engine provides an <code>includeError</code> trace pointing to the exact line in the
+                        included file.</p>
+                </div>
+                <div>
+                    <h4 style="color: #a855f7;">&lt;open file="..." /&gt;</h4>
+                    <p style="font-size: 1rem;">Launches a file in a completely isolated background thread. Ideal for
+                        audit logging, notification dispatching, or cleanup tasks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dsl-mastery">
+            <h2>DSL & Custom Tags</h2>
+            <p>Elevate your code by using named functions as native XML elements.</p>
+            <pre><code><span class="comment">&lt;!-- Definition --&gt;</span>
+<span class="tag">&lt;function</span> <span class="attr">name=</span><span class="val">"alert"</span> <span class="attr">type=</span><span class="val">"html"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="val">"alert-{{type}}"</span><span class="tag">&gt;</span>{{message}}<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/function&gt;</span>
+
+<span class="comment">&lt;!-- Usage --&gt;</span>
+<span class="tag">&lt;alert</span> <span class="attr">type=</span><span class="val">"error"</span> <span class="attr">message=</span><span class="val">"Critical Failure!"</span> <span class="tag">/&gt;</span></code></pre>
         </section>
 
         <section id="sec-encryption">

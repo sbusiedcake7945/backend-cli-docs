@@ -631,6 +631,11 @@
                         <td>Asynchronous file execution in an isolated goroutine.</td>
                     </tr>
                     <tr>
+                        <td class="tag-ref">&lt;input&gt;</td>
+                        <td>Handler</td>
+                        <td>Waits the request until the console accepts it</td>
+                    </tr>
+                    <tr>
                         <td class="tag-ref">&lt;call&gt; / Custom</td>
                         <td>Handler</td>
                         <td>Executes named functions. Supports isolated parameter passing.</td>
@@ -646,14 +651,14 @@
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
                     <div>
                         <h4 style="color: #6366f1;">Go Native Block</h4>
-                        <pre><code><span class="tag">&lt;function</span> <span class="attr">type=</span><span class="val">"go"</span><span class="tag">&gt;</span>
+                        <pre><code><span class="tag">&lt;function</span> <span class="attr">name=</span><span class="val">"gofunc"</span><span class="attr">type=</span><span class="val">"go"</span><span class="tag">&gt;</span>
   <span class="comment">// Pure Go Performance</span>
   fmt.Println("Concurrency Active")
 <span class="tag">&lt;/function&gt;</span></code></pre>
                     </div>
                     <div>
                         <h4 style="color: #a855f7;">JS Logic Block (Otto)</h4>
-                        <pre><code><span class="tag">&lt;function</span> <span class="attr">type=</span><span class="val">"js"</span><span class="tag">&gt;</span>
+                        <pre><code><span class="tag">&lt;function</span> <span class="attr">name=</span><span class="val">"jsfunc"</span><span class="attr">type=</span><span class="val">"js"</span><span class="tag">&gt;</span>
   <span class="comment">// Native Go-JS Engine</span>
   console.log("Otto Engine Active");
   print("Hello from JS");
@@ -747,7 +752,7 @@
         </section>
 
         <section id="dsl-mastery">
-            <h2>DSL & Custom Tags</h2>
+            <h2>Custom Tags</h2>
             <p>Elevate your code by using named functions as native XML elements.</p>
             <pre><code><span class="comment">&lt;!-- Definition --&gt;</span>
 <span class="tag">&lt;function</span> <span class="attr">name=</span><span class="val">"alert"</span> <span class="attr">type=</span><span class="val">"html"</span><span class="tag">&gt;</span>
